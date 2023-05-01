@@ -55,7 +55,7 @@ RUN docker-php-ext-install mysqli
 RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl
 RUN docker-php-ext-install imap
 RUN docker-php-ext-install curl
-RUN pecl install xmlrpc-1.0.0RC2
+RUN pecl install xmlrpc
 RUN docker-php-ext-install xmlwriter
 RUN docker-php-ext-install xml
 RUN docker-php-ext-install opcache
