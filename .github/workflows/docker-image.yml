@@ -22,7 +22,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker Image
       run:
-        docker build . --file Dockerfile --tag xavi-php-fpm82-nginx:$(date +%s)
+        docker build . --file Dockerfile --tag xavi78/xavi-php-fpm82-nginx:$(date +%s)
     - name: Docker Push
       run:
-        docker push ${{secrets.DOCKER_USER}}/xavi-php-fpm82-nginx:$(date +%s)
+        docker push ${{secrets.DOCKER_USER}}/xavi-php-fpm82-nginx
