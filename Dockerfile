@@ -18,7 +18,8 @@ RUN apt-get update && apt-get install -y \
     htop \
     zip \
     vim \
-    lsof
+    lsof \
+    apt-utils
 
 RUN apt-get install -y \
     zlib1g-dev libpq-dev libc-client-dev libkrb5-dev gnutls-bin
